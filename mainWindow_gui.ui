@@ -40,8 +40,19 @@
     <property name="title">
      <string>File</string>
     </property>
+    <widget class="QMenu" name="menuNew">
+     <property name="title">
+      <string>New</string>
+     </property>
+     <addaction name="actionMeasurement"/>
+     <addaction name="actionSample"/>
+     <addaction name="actionProcess"/>
+     <addaction name="actionProject"/>
+     <addaction name="actionNewDatabase"/>
+    </widget>
     <addaction name="actionOpen_Database"/>
-    <addaction name="actionCreate_Database"/>
+    <addaction name="separator"/>
+    <addaction name="menuNew"/>
    </widget>
    <addaction name="menuFile"/>
   </widget>
@@ -54,6 +65,31 @@
   <action name="actionCreate_Database">
    <property name="text">
     <string>Create Database</string>
+   </property>
+  </action>
+  <action name="actionMeasurement">
+   <property name="text">
+    <string>Measurement</string>
+   </property>
+  </action>
+  <action name="actionSample">
+   <property name="text">
+    <string>Sample</string>
+   </property>
+  </action>
+  <action name="actionProcess">
+   <property name="text">
+    <string>Process Step</string>
+   </property>
+  </action>
+  <action name="actionProject">
+   <property name="text">
+    <string>Project</string>
+   </property>
+  </action>
+  <action name="actionNewDatabase">
+   <property name="text">
+    <string>Database</string>
    </property>
   </action>
  </widget>
